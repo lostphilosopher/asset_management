@@ -38,8 +38,12 @@ gem 'devise', '~> 4.2.0'
 gem 'haml-rails', '~> 0.9.0'
 
 group :development, :test do
-  # Call 'byebug' anywhere in the code to stop execution and get a debugger console
-  gem 'byebug', platform: :mri
+  # binding.pry (https://github.com/rweng/pry-rails)
+  gem 'pry-rails'  
+  # Testing with RSpec
+  gem 'rspec-rails', '~> 3.0'
+  # Add the should syntax for rspec
+  gem 'shoulda-matchers'
 end
 
 group :development do
